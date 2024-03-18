@@ -1,0 +1,10 @@
+<div class="container" style="display: grid; grid-template-columns: auto auto auto; margin-top: 30px;">
+    <div *ngFor="let item of result" class="card" style="width: 18rem; margin: 20px; height: 470px;">
+        <img src={{item.image}} class="card-img-top" alt="..." style="height: 300px;">
+        <div class="card-body">
+            <h5 class="card-title">{{item.title.substring(0,12)}}...</h5>
+            <p class="card-text">{{item.description.substring(0, 50)}}...</p>
+            <a routerLink="subabout" class="btn btn-primary" style="margin-left: 60px;">Read more</a>
+        </div>
+    </div>
+</div>
